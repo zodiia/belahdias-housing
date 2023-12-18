@@ -1,0 +1,24 @@
+<!-- <div class="back-image" style="background-image: url('/assets/img/{{ projectId }}/{{ projectId }}-1.jpg');"> -->
+<div>
+  <fixed-container class="container">
+    <div class="title">
+      <h3>{{ projectName }}</h3>
+      <div class="title-details">
+        <icon-label [icon]="faServer">{{ server }}</icon-label>
+        <icon-label [icon]="faLocationDot">{{ location }}</icon-label>
+      </div>
+    </div>
+    <p>{{ description }}</p>
+    <div class="screenshots">
+      <div class="screenshot">
+        <img src="/assets/img/{{ projectId }}/{{ projectId }}-1.jpg" alt="{{ projectName }} 1" />
+      </div>
+      <div class="screenshot">
+        <img src="/assets/img/{{ projectId }}/{{ projectId }}-2.jpg" alt="{{ projectName }} 2" />
+      </div>
+      <div class="screenshot">
+        <img src="/assets/img/{{ projectId }}/{{ projectId }}-3.jpg" alt="{{ projectName }} 3" />
+      </div>
+    </div>
+  </fixed-container>
+</div>

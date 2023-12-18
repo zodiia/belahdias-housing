@@ -1,0 +1,11 @@
+span {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  color: #ddd;
+  align-items: flex-end;
+
+  fa-icon {
+    font-size: 14px;
+  }
+}

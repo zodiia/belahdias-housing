@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  gap: 0.5em;
+
+  & fa-icon {
+    padding-top: 1px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

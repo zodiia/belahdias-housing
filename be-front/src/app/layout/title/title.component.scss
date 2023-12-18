@@ -1,0 +1,24 @@
+@import '../../../styles/_sizes';
+
+.title {
+  text-align: center;
+  margin: 1em 0 3em;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  @include media-md {
+    h1 {
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  gap: 0.5em;
+  padding: 0.5em;
+
+  a {
+    color: white;
+    background: transparent;
+    border: unset;
+    text-decoration: none;
+    margin: 0.5em;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  a:first-child {
+    font-weight: 700;
+  }
+}
+
+.fullnav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  a {
+    width: 100%;
+    background-color: #333;
+    padding: 1em;
+    color: white;
+    border: unset;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  a:first-child {
+    font-weight: 700;
+  }
+}
+
+a.home {
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  gap: 0.5em;
+
+  & fa-icon {
+    padding-top: 1px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.hamburger-button {
+  background-color: unset;
+  border: unset;
+  font-size: 28px;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.5em;
+  color: white;
+}

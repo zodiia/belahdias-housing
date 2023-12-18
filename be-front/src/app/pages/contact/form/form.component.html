@@ -1,0 +1,61 @@
+<form [formGroup]="formControl">
+  <div class="row">
+    <div class="form-element">
+      <label for="discordId">Discord username</label>
+      <input id="discordId" type="text" formControlName="discordId" placeholder="zodiia" />
+    </div>
+    <div class="form-element">
+      <label for="igName">Character name</label>
+      <input id="igName" type="text" formControlName="igName" placeholder="Bornwyda Guldhaemrwym" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-element">
+      <label for="server">Server</label>
+      <select id="server" formControlName="server">
+        @for (opt of servers; track opt.value) {
+        <option [value]="opt.value">{{ opt.display }}</option>
+        }
+      </select>
+    </div>
+    <div class="form-element">
+      <label for="district">District</label>
+      <select id="district" formControlName="district">
+        @for (opt of districts; track opt.value) {
+        <option [value]="opt.value">{{ opt.display }}</option>
+        }
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-element">
+      <label for="houseSize">House size</label>
+      <select for="houseSize" formControlName="houseSize">
+        @for (opt of houseSizes; track opt.value) {
+        <option [value]="opt.value">{{ opt.display }}</option>
+        }
+      </select>
+    </div>
+    <div class="form-element">
+      <label for="furnituresBudget">Furnitures budget</label>
+      <input
+        id="furnituresBudget"
+        type="text"
+        formControlName="furnituresBudget"
+        placeholder="Usually between 4 and 8 millions" />
+    </div>
+  </div>
+  <div class="large-row">
+    <div class="form-element">
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        formControlName="message"
+        rows="8"
+        placeholder="Tell us what you want, styles, inspirations, anything. Please provide as much screenshots as possible. Details will be discussed in Discord afterwards."></textarea>
+    </div>
+  </div>
+  <div class="submit-row">
+    <button class="submit-button" role="submit" (click)="(onSend)">Send</button>
+  </div>
+</form>

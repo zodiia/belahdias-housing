@@ -1,0 +1,73 @@
+@import '../../../../styles/_sizes';
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+
+  @include media-xs {
+    flex-direction: column;
+  }
+}
+
+.large-row > * {
+  width: 100%;
+}
+
+.submit-row {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+
+  button {
+    background-color: black;
+    border: 1px solid #888;
+    border-radius: 0.25em;
+    font-size: 20px;
+    padding: 0.5em 2em;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #111;
+    }
+  }
+}
+
+.form-element {
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+
+  label {
+    font-size: 18px;
+  }
+
+  :is(input, select, textarea) {
+    font-size: 18px;
+    padding: 0.4em;
+    background: #000;
+    color: #fff;
+    border: 1px solid #888;
+    border-radius: 0.25em;
+  }
+
+  input::placeholder {
+    color: #bbb;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  textarea::placeholder {
+    color: #bbb;
+  }
+}

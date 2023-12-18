@@ -1,0 +1,28 @@
+@import "../../styles/_sizes.scss";
+
+.outer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inner {
+  @include media-xs {
+    width: calc(100% - $fixed-content-margin);
+  }
+
+  @include media-sm {
+    width: calc($sm-breakpoint - $fixed-content-margin);
+  }
+
+  @include media-md {
+    width: calc($md-breakpoint - $fixed-content-margin);
+  }
+
+  @include media-lg {
+    width: calc($lg-breakpoint - $fixed-content-margin);
+  }
+
+  @include media-xl {
+    width: calc($xl-breakpoint - $fixed-content-margin);
+  }
+}

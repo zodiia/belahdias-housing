@@ -1,0 +1,17 @@
+@import '@angular/cdk/overlay-prebuilt.css';
+@import './styles/fonts';
+
+html {
+  height: 100%;
+}
+
+body {
+  color: white;
+  background-color: black;
+  margin: 0;
+  height: 100%;
+
+  & * {
+    display: block;
+  }
+}

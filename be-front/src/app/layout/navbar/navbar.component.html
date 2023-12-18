@@ -1,0 +1,17 @@
+@if (smallScreen) {
+<nav class="navbar" aria-label="Navigation bar">
+  <a (click)="$event.stopPropagation()" href="/" class="home"><fa-icon [icon]="faHouse" />Belahdia's Estate</a>
+  <a (click)="$event.stopPropagation()" href="https://reddit.com">reddit</a>
+  <a (click)="$event.stopPropagation()" href="/contact">Contact</a>
+</nav>
+} @else {
+<button class="hamburger-button" (click)="onClick()">
+  <fa-icon [icon]="faBars" />
+</button>
+<div backdrop [opened]="smallNavOpen" (clicked)="closeBackdrop()">
+  <nav class="fullnav" aria-label="Small navigation bar">
+    <a (click)="$event.stopPropagation()" href="/" class="home"><fa-icon [icon]="faHouse" />Belahdia's Estate</a>
+    <a (click)="$event.stopPropagation()" href="/contact">Contact</a>
+  </nav>
+</div>
+}
