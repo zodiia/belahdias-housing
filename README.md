@@ -53,3 +53,9 @@ The backend is currently not linked, no need to run it at the moment.
 ## Deployment
 
 TODO. Deployment will be handled with a terraform project.
+
+# License
+
+This project is released under the MIT license.
+
+See [LICENSE](https://github.com/zodiia/simple-di/blob/main/LICENSE).
