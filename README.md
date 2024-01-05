@@ -4,7 +4,7 @@ This is a small side-project written in Typescript with Angular and Go with Gin.
 
 Belahdia's Estate is a group that creates housing interiors in the game Final Fantasy XIV. This website serves as its presentation page, as well as a way to contact them.
 
-This project serves as a personal example project for Angular.
+This project is a small personal example project for Angular and Gin.
 
 ## Components (`be-components`)
 
