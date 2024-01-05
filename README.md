@@ -6,6 +6,8 @@ Belahdia's Estate is a group that creates housing interiors in the game Final Fa
 
 This project is a small personal example project for Angular and Gin.
 
+# Project structure
+
 ## Components (`be-components`)
 
 A small project that contains shared components. They can be reused in other projects and could be published as an independant library, with some tweaks.
@@ -21,3 +23,33 @@ The back-end project, build with the Gin library, in Go. It only has one route, 
 ## Terraform (`be-terraform`)
 
 A small Terraform project to publish the whole project in GCP.
+
+# Run locally
+
+This project uses `pnpm` as the package manager for Node.
+
+## Installation
+
+Run `pnpm install` in the root directory.
+
+Go to `be-components` and run the following commands:
+
+```
+pnpm install
+pnpm build
+```
+
+Go to `be-front` and run the following commands:
+
+```
+pnpm install
+pnpm start
+```
+
+The front-end will now be running locally at http://localhost:4200
+
+The backend is currently not linked, no need to run it at the moment.
+
+## Deployment
+
+TODO. Deployment will be handled with a terraform project.
